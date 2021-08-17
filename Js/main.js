@@ -1,33 +1,33 @@
-const form =document.getElementById("form");
-const input= document.getElementById("input");
-const todos= document.getElementById("todos");
+
+const message = document.getElementById('message'),
+    inputBalance = document.getElementById('inputBalance'),
+    inputAmount = document.getElementById('inputAmount');
 
 
-form.addEventListener("submit" , (e) => {
-e.preventDefault();
-
-const todoText = input.value;
-
-if  (todoText){
-    const todoE1 = document.createElement
-    ("li");
-    todoE1.className = "list-group-item";
-    todoE1.innerText = todoText;
-
-    todoE1.addEventListener('click', () => {
-
-        todoE1.classList.toggle('completed');
-    });
-
-    todoE1.addEventListener('contextmenu', (e) => {
-        e.preventDefault();
-        todoE1.remove();
-    })
-
-
-
-    todos.appendChild(todoE1);
-    input.value = "";
+function convMobile(source, valNum) {
+    'use strict';
+    valNum = parseFloat(valNum);
+    if (valNum !== '') {
+        if (source === 'inputAmount') {
+            inputBalance.value = Math.round((valNum * 0.7) * 100) / 100;
+        }
+        if (source === 'inputBalance' && valNum !== '') {
+            inputAmount.value = Math.round(((valNum * 10) / 7) + 0.4);
+        }
+    } else {
+        inputAmount.value = 0;
+        inputBalance.value = 0;
+    }
 }
 
-})
+//negtive numbers
+const numInput = document.querySelector('input');
+// Listen for input event on numInput.
+numInput.addEventListener('input', function(){
+    // Let's match only digits.
+    const num = this.value.match(/^\d+$/);
+    if (num === null) {
+        // If we have no match, value will be empty.
+        this.value = "";
+    }
+}, false)
