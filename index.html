@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rassedk</title>
+
+    <!--  custom css file  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--  font awesome icons  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--  Bootstrap css file  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link id="rtl_link" rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <!--  Google Fonts CDN  -->
+</head>
+<body>
+
+ <!--------------------------------Start logo----------------------------------------- -->
+<div class="logo title">
+    <img src="images/cover.png" class="img-fluid rounded " alt="Responsive image">   
+  </div>
+<!-------------------------------- End logo----------------------------------------- -->
+
+<!-- ---------------------------start form equivaunt ---------------------------------->
+
+<form>
+  <div class="row pt-5">
+    <div class="col">
+      <input class="in1 form-control" dir="ltr" onchange="convMobile(this.id,this.value)" placeholder="المبلغ المدفوع" type="number" oninput="convMobile(this.id,this.value)" id="inputAmount" min="0" oninput="validity.valid||(value='');" style="text-align: center;width:100%" >
+    </div>
+    <div class=" sign " style="color: #f8d4d4; font-size: 1.5em;">⇄</div>
+    <div class="col">
+      <input class="in2 form-control" dir="ltr" onchange="convMobile(this.id,this.value)" placeholder="الرصيد صافى" type="number" oninput="convMobile(this.id,this.value)" id="inputBalance" min="0" oninput="validity.valid||(value='');" style="text-align: center;width:100% "  >
+    </div>
+  </div>
+</form>
+
+<!-- ---------------------------End form equivaunt ---------------------------------->
+
+
+
+<!-- ---------------------------Start 4sims img ---------------------------------->
+<div class="container ">
+    <div class="phonescell mt-4 mb-5">
+      <p></p>
+        <img src="images/4 sims.png" class="img-fluid rounded " alt="Responsive image">   
+    </div>
+  </div>     
+  <div class="alert alert-warning"  role="alert" style="text-align: center;padding-top: 10px;margin: auto;max-width: 100%;width:450px;">
+   العملية الحسابية متوافقة مع 4 شبكات المحمول المصرية 
+  </div>
+<!-- ---------------------------End 4sims img ---------------------------------->
+                         
+    <div class="container">
+        <div id="accordion" style="border-radius: 100px;">
+            <div class="card  mt-4 ">
+              <div class="card-header alert-info" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link " style="color: black; text-decoration: none; " data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >
+                    ايه هو موقع رصيدك ؟
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  موقع رصيدك هو موقع يمكنك من معرفةو حساب وتحويل المبلغ المراد دفعه الى رصيد فعلى فى خط شبكتك المحمول
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header alert-info" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed"  style="color: black; text-decoration: none; " data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    أسعار كروت الشحن ايه ؟
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <td>كارت الشحن 10 جنيه بيدي كام رصيد؟</td>
+                        <td>	7  رصيد</td>
+                      </tr>
+                      <tr>
+                        <td>كارت الشحن 15 جنيه بيدي كام رصيد؟</td>
+                        <td>	10  رصيد</td>
+                      </tr>
+                      <tr>
+                        <td>كارت الشحن 25 جنيه بيدي كام رصيد؟</td>
+                        <td>	17.5  رصيد</td>
+                      </tr>
+                      <tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header alert-info" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" style="color: black; text-decoration: none; " data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    عاوز اشحن اونلاين اشحن ازاى ؟
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  فودافون : <a href="https://bit.ly/3ga5SEZ">https://bit.ly/3ga5SEZ</a>
+                  <br>
+                  وى :<a href=" https://bit.ly/3ANzzTZ">  https://bit.ly/3ANzzTZ</a>
+                  <br>
+                  اتصالات :<a href="http://bit.ly/3jZakqZ"> http://bit.ly/3jZakqZ</a>
+                  <br>
+                  اورنچ :  <a href="https://bit.ly/3gcLTVZ">https://bit.ly/3gcLTVZ</a>
+                </div>
+              </div>
+            </div>
+    </div>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start mt-5 " style="color: rgb(255, 255, 255)";>
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #3C244C;">
+        © 2021 Copyright:
+        <a style="color: rgb(255, 255, 255);" href="https://github.com/a7mdhesham">Ahmed Hesham</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+
+<!-- ---------------------------Scripts ---------------------------------->
+    <!--  Bootstrap js file  -->
+    <script src="./js/bootstrap.min.js"></script>
+     <!--  Main js file  -->
+    <script src="Js/main.js"></script>
+
+</body>
+</html>

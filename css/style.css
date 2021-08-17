@@ -1,0 +1,41 @@
+/* Start Global Rules */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+body
+{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #3C244C 0%, #3C244C 100%); 
+    background-position: center;
+    overflow-x: hidden;
+}
+/* End Global Rules */
+
+.in1
+{
+max-width: fit-content;
+float: left;
+}
+.in2
+{
+max-width: fit-content;
+}
+ .sign
+{
+max-width: fit-content;
+}
+
+.phonescell
+{
+    margin: auto;
+    text-align: center;
+    max-width: 250px;
+}
+
+
